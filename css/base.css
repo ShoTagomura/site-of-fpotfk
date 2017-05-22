@@ -6,6 +6,8 @@ body {
 	font-family: "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	margin:0px;
 	text-align:center;
+	height:100%;
+	min-height: 100vh;
 }
 .menues {
 	background-color:#fcfcfc;
@@ -20,15 +22,19 @@ body {
 	-ms-grid-rows: auto;
 }
 .menues > .meui {
-	padding: 1.3rem;
+	//padding: 1.3rem;
 }
 .meui > a {
 	color: #000;
 	text-decoration: none;
+	display: block;
+	padding: 1.3rem;
 }
 .meui > a:hover {
 	color: #000;
 	text-decoration: none;
+	display: block;
+	padding: 1.3rem;
 }
 .heads {
 	background-color:#fcfcfc;
@@ -44,6 +50,7 @@ body {
 	grid-template-rows: auto;
 	-ms-grid-columns: 1fr;
 	-ms-grid-rows: auto;
+	padding: auto;
 	//min-height: 50vh;
   	//overflow: hidden;
 }
@@ -72,15 +79,27 @@ body {
 	}
 	.menues > .meui {
 		background-color:#fcfcfc;
-		padding: 2rem;
+		//padding: 2rem;
 		color: #000;
 		text-decoration: none;
 	}
 	.menues > .meui:hover {
 		background-color:#666;
-		padding: 2rem;
+		//padding: 2rem;
 		color: #000;
 		text-decoration: none;
+	}
+	.mn01 {
+		grid-column: 1;
+		grid-row: 1;
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+	.mn02 {
+		grid-column: 2;
+		grid-row: 1;
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
 	}
 	.heads {
 		/*background-color:#efefef;
@@ -89,7 +108,8 @@ body {
 		align-items: center;
 		//text-align:center;
 		//width: 100%;
-		//height: 250px;*/
+		height: 250px;*/
+		//height: 50vh;
 		grid-template-rows: auto 1fr;
 		grid-template-columns: 1fr 1fr;
 		-ms-grid-columns: 1fr 1fr;
@@ -101,12 +121,14 @@ body {
 		grid-row: 1;
 		-ms-grid-column: 1;
 		-ms-grid-row: 1;
+		height:100%;
 	}
 	.img02 {
 		grid-column: 2;
 		grid-row: 1;
 		-ms-grid-column: 2;
 		-ms-grid-row: 1;
+		height:100%;
 	}
 	.img03 {
 		background-color: #efefef;
@@ -115,6 +137,7 @@ body {
 		-ms-grid-column: 1;
 		-ms-grid-row: 2;
 		-ms-grid-column-span: 2;
+		height:100%;
 	}
 	/*.heads img {
 	  //width: 80%;
