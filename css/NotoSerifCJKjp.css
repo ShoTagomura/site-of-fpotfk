@@ -1,15 +1,23 @@
 @font-face {
     font-family: 'NotoSerifCJKjp';
     font-style: normal;
-    //font-weight: 400;
+    font-weight: 400;
     src:
         url('./NotoSerifCJKjp-Regular-sub.woff2') format('woff2'),
         url('./NotoSerifCJKjp-Regular-sub.woff') format('woff');
 }
 @font-face {
     font-family: 'NotoSerifCJKjp';
+    font-style: normal;
+    font-weight: 600;
+    src:
+        url('./NotoSerifCJKjp-SemiBold-sub.woff2') format('woff2'),
+        url('./NotoSerifCJKjp-SemiBold-sub.woff') format('woff');
+}
+@font-face {
+    font-family: 'NotoSerifCJKjp';
     font-style: bold;
-    //font-weight: 600;
+    font-weight: 700;
     src:
         url('./NotoSerifCJKjp-Bold-sub.woff2') format('woff2'),
         url('./NotoSerifCJKjp-Bold-sub.woff') format('woff');
