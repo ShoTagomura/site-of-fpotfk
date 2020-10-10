@@ -23,6 +23,7 @@ body {
 }
 .menues > .meui {
 	//padding: 1.3rem;
+    border-top: solid 1px #666;
 }
 .meui > a {
 	color: #000;
@@ -81,6 +82,9 @@ body {
 		background-color:#fcfcfc;
 		//padding: 2rem;
 		color: #000;
+        border-top: none;
+        border-left: solid 0.5px #666;
+        border-right: solid 0.5px #666;
 		text-decoration: none;
 	}
 	.menues > .meui:hover {

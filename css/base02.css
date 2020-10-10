@@ -8,8 +8,8 @@ body {
 	text-align:center;
 }
 .seriffer {
-	//font-family: NotoSerifCJKjp, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-    font-family: Georgia,"游明朝","Yu Mincho",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho ProN","HGS明朝E","メイリオ",Meiryo,serif;
+	/*font-family: NotoSerifCJKjp, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;*/
+    font-family: "Lora","游明朝","Yu Mincho",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho ProN","メイリオ",Georgia,Meiryo,serif;
 }
 .heads {
 	background-color:#fcfcfc;
@@ -25,7 +25,21 @@ body {
 }
 .heads > .meui {
 	padding: 1.3rem;
+    border-top: solid 1px #666;
 }
+.meui > a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 1.3rem;
+}
+/*.meui > a:hover {
+    color: #000;
+    background-color: #747474;
+    text-decoration: none;
+    display: block;
+    padding: 1.3rem;
+}*/
 .titles {
 	padding: 2rem;
 	color:#fff;
@@ -41,6 +55,9 @@ body {
 	-ms-grid-column: 1;
 	-ms-grid-row: auto;
 }
+.imgbor {
+    border: solid 1px #000;
+}
 
 @media (min-width: 1024px) {
 	.heads {
@@ -52,11 +69,13 @@ body {
 	}
 	.heads > .meui {
 		background-color:#fcfcfc;
-		padding: 2rem;
+		padding: 1.3rem;
+        border-top: none;
+        border-left: solid 1px #666;
 	}
 	.heads > .meui:hover {
 		background-color:#666;
-		padding: 2rem;
+		padding: 1.3rem;
 	}
 	.titles {
 		padding: 2rem;
