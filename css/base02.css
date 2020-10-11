@@ -47,7 +47,8 @@ body {
 }
 .heads img {
   //width: 80%;
-  height: auto;
+    height: auto;
+    object-fit: contain;
 }
 .imgt {
 	grid-column: 1;
@@ -58,8 +59,13 @@ body {
 .imgbor {
     border: solid 1px #000;
 }
+.imgmain {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
 	.heads {
 		grid-template-rows: auto 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
