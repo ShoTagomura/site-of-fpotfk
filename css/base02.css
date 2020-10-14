@@ -71,7 +71,7 @@ padding: 1.3rem;
     background-color:#7f7f7f;
 }
 .imgt > img {
-    max-width: 90%;
+    width: 90%;
     height: auto;
     object-fit: contain;
 }
@@ -148,6 +148,11 @@ padding: 1.3rem;
     .mebt {
         display: none;
         visibility: hidden;
+    }
+    .imgdisp > img {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
     }
     /*.titles {
     padding: 2rem;

@@ -25,7 +25,7 @@ body {
     background-color:#fcfcfc;
 }
 .headimd img {
-    max-width: 90%;
+    width: 90%;
     height: auto;
     object-fit: contain;
 }
@@ -113,8 +113,6 @@ body {
 		padding: 2rem;*/
 		color: #000;
         border-top: none;
-        border-left: solid 0.5px #666;
-        border-right: solid 0.5px #666;
 		text-decoration: none;
 	}
 	.menues > .meui:hover {
@@ -123,6 +121,11 @@ body {
 		color: #ffffff;
 		text-decoration: none;
 	}
+    .menues > .meui:nth-child(n+2) {
+        /*background-color:#fcfcfc;
+        padding: 2rem;*/
+        border-left: solid 0.5px #666;
+    }
 	/*.mn01 {
 		grid-column: 1;
 		grid-row: 1;
