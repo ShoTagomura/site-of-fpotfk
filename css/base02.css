@@ -29,6 +29,7 @@ body {
 }
 .heads > .meui {
     padding: 1.3rem;
+    font-size: 1.2rem;
     display: none;
     align-items: center;
     justify-content: center;
@@ -67,6 +68,7 @@ padding: 1.3rem;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    font-size: 1.5rem;
     color:#fff;
     background-color:#7f7f7f;
 }
@@ -119,6 +121,9 @@ padding: 1.3rem;
     width: 50%;
     height: 50%;
     object-fit: contain;
+}
+.childisp {
+    font-size: 1.2rem;
 }
 .foots {
     grid-column: 1 / 2;

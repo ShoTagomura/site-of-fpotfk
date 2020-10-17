@@ -124,7 +124,7 @@ body {
     .menues > .meui:nth-child(n+2) {
         /*background-color:#fcfcfc;
         padding: 2rem;*/
-        border-left: solid 0.5px #666;
+        border-left: solid 1px #666;
     }
 	/*.mn01 {
 		grid-column: 1;

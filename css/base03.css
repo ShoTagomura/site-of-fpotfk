@@ -29,6 +29,7 @@ body {
 }
 .heads > .meui {
 	padding: 1.3rem;
+    font-size: 1.2rem;
     display: none;
     align-items: center;
     justify-content: center;
@@ -64,6 +65,7 @@ body {
 	grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding: 2rem;
+    font-size: 1.5rem;
 	color:#fff;
 	background-color:#7f7f7f;
 }
@@ -133,6 +135,13 @@ body {
     height: 50%;
     object-fit: contain;
 }
+.childisp {
+    font-size: 1.2rem;
+}
+.lililinks > li {
+    margin-top: 1rem;
+    text-align: left;
+}
 .foots {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
@@ -171,6 +180,11 @@ body {
     .maindisp {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+    }
+    .childisp {
+        margin-left: 5.0rem;
+        margin-right: 5.5rem;
+        text-align: left;
     }
 	/*.titles {
 		padding: 2rem;
