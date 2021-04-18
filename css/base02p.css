@@ -1,14 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
-
+* {
+    box-sizing: border-box;
+}
 body {
-	background-color:#efefef;
-	font-family: "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	margin:0px;
-	text-align:center;
+    background-color:#efefef;
+    font-family: "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    margin:0px;
+    text-align:center;
 }
 .seriffer {
-	/*font-family: NotoSerifCJKjp, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;*/
+    /*font-family: NotoSerifCJKjp, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;*/
     font-family: "Lora","游明朝","Yu Mincho",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho ProN","メイリオ",Georgia,Meiryo,serif;
 }
 .gridize {
@@ -28,7 +30,7 @@ body {
     background-color:#fcfcfc;
 }
 .heads > .meui {
-	padding: 1.3rem;
+    padding: 1.3rem;
     font-size: 1.2rem;
     display: none;
     align-items: center;
@@ -56,22 +58,22 @@ body {
     background-color: #666;
 }
 /*.meui > a:hover {
-    color: #000;
-    background-color: #747474;
-    text-decoration: none;
-    display: block;
-    padding: 1.3rem;
+color: #000;
+background-color: #747474;
+text-decoration: none;
+display: block;
+padding: 1.3rem;
 }*/
 .titles {
-	grid-column: 1 / 2;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     font-size: 1.5rem;
-	color:#fff;
-	background-color:#7f7f7f;
+    color:#fff;
+    background-color:#7f7f7f;
 }
 .imgt > img {
     width: 90%;
@@ -142,9 +144,21 @@ body {
 .childisp {
     font-size: 1.2rem;
 }
+.centleftize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lililinks {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
 .lililinks > li {
     margin-top: 1rem;
     text-align: left;
+}
+.longlinks {
+    word-break: break-all;
 }
 .foots {
     grid-column: 1 / 2;
@@ -161,50 +175,57 @@ body {
     .heads > .meui {
         display: flex;
         background-color:#fcfcfc;
-		padding: 1.3rem;
+        padding: 1.3rem;
         border-top: none;
         border-left: solid 1px #666;
-	}
-	.heads > .meui:hover {
-		background-color:#666;
+    }
+    .heads > .meui:hover {
+        background-color:#666;
         color: #ffffff;
         text-decoration: none;
-		padding: 1.3rem;
-	}
+        padding: 1.3rem;
+    }
     .mebt {
         display: none;
         visibility: hidden;
     }
     .mains {
-        display: grid;
+        /*display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr;*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
     }
     .mainsumb {
+        /*grid-column: 1 / 2;
+        grid-row: 1 / 2;*/
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
     .maindisp {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        /*grid-column: 2 / 3;
+        grid-row: 1 / 2;*/
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
-    .childisp {
+    /*.childisp {
         margin-left: 5.0rem;
         margin-right: 5.5rem;
         text-align: left;
-    }
-	/*.titles {
-		padding: 2rem;
-		color:#fff;
-		background-color:#7f7f7f;
-		grid-column: 1 / 4;
-		grid-row: 2;
-		-ms-grid-column: 1;
-		-ms-grid-row: 2;
-		-ms-grid-column-span: 3;
-	}
-	.heads img {
-	  //width: 80%;
-	  height: auto;
-	}*/
+    }*/
+    /*.titles {
+    padding: 2rem;
+    color:#fff;
+    background-color:#7f7f7f;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 3;
+}
+    .heads img {
+    //width: 80%;
+    height: auto;
+}*/
 }

@@ -39,6 +39,7 @@ body {
 }
 .mebt {
     padding: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +101,8 @@ padding: 1.3rem;
     justify-content: center;
 }
 .imgmsb > img {
-    max-width: 90%;
+    /*max-width: 90%;*/
+    max-width: 50vh;
     height: auto;
     object-fit: contain;
 }
