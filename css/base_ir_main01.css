@@ -8,7 +8,6 @@ body {
     font-family: "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     margin:0px;
     text-align:center;
-    min-height: 100vh;
 }
 .seriffer {
     /*font-family: NotoSerifCJKjp, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;*/
@@ -92,54 +91,28 @@ padding: 1.3rem;
 }
 .mains {
     padding: 1rem 1rem;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto;
+    font-size: 1.2rem;
 }
-.mainsumb {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-.imgridox {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 1fr;
-}
-.imgmsb {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-.imgmsb > img {
-    max-width: 90%;
-    height: auto;
-    object-fit: contain;
-}
-.maindisp {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-.maindisp > img {
-    max-width: 90%;
-    height: auto;
-    object-fit: contain;
-}
-.imgdisp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imgdisp > img {
-    width: 90%;
-    height: auto;
-    object-fit: contain;
+.dispbox {
+    padding: 1rem 0.5rem;
+    text-align: left;
 }
 .imgbor {
     border: solid 1px #000;
 }
-.imgmain {
-    width: 50%;
-    height: 50%;
+.imgridox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.innerimgrix {
+    flex: 1 1 300px;
+    padding: 0.5rem;
+}
+.innerimgrix img {
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
 }
 .childisp {
@@ -190,43 +163,13 @@ padding: 1.3rem;
         display: none;
         visibility: hidden;
     }
-    .mains {
-        /*display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;*/
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-    .mainsumb {
-        /*grid-column: 1 / 2;
-        grid-row: 1 / 2;*/
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    .maindisp {
-        /*grid-column: 2 / 3;
-        grid-row: 1 / 2;*/
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    /*.childisp {
-        margin-left: 5.0rem;
-        margin-right: 5.5rem;
+    .dispbox {
+        padding: 1rem 2rem;
         text-align: left;
-    }*/
-    /*.titles {
-    padding: 2rem;
-    color:#fff;
-    background-color:#7f7f7f;
-    grid-column: 1 / 4;
-    grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-row: 2;
-    -ms-grid-column-span: 3;
-}
-    .heads img {
-    //width: 80%;
-    height: auto;
-}*/
+    }
+    .innerimgrix img {
+        max-width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
 }

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-
+* {
+    box-sizing: border-box;
+}
 body {
 	background-color:#7f7f7f;
 	font-family: "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -73,10 +75,16 @@ body {
     padding: 1rem 1rem;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+	font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
+}
+a.mainlinker
+{
+	color: #ffffff;
+	text-decoration: underline;
 }
 .foots {
     padding: 0.1rem 0rem;
